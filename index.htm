@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty of Taiwan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <h1><a href="index.htm" title="Succulent Gardening Home">Beauty of Taiwan</a></h1>
+        <nav>
+            <button class="nav-button"><img src="image/img_menu.svg" alt=""></button>
+            <ul class="nav-menu hide">
+                <li><a href="#route" title="route">登山路線介紹</a></li>
+                <li><a href="#hut" title="hut">山屋申請教學</a></li>
+                <li><a href="#gear" title="gear">裝備選購懶人包</a></li>
+                <li><a href="#tips" title="tips">新手注意事項</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Beauty of Taiwan</h1>
+    </main>
+    <section>
+        <div class="card" id="route">
+            <picture class="card__image">
+                <source media="(max-width: 727px)" srcset="image/img_card01p.jpg">
+                <source media="(min-width: 728px)" srcset="image/img_card01.jpg">
+                <img src="image/img_card01.jpg" alt="新手友善登山路線">
+            </picture>
+            <div class="card__info">
+                <h3>新手友善登山路線</h3>
+                <p>台灣山岳難度分級攻略，新手必看22條登山路線。</p>
+            </div>
+        </div>
+        <div class="card" id="hut">
+            <picture class="card__image">
+                <source media="(max-width: 727px)" srcset="image/img_card02p.jpg">
+                <source media="(min-width: 728px)" srcset="image/img_card02.jpg">
+                <img src="image/img_card02.jpg" alt="新手申請山屋教學">
+            </picture>
+            <div class="card__info">
+                <h3>新手申請山屋教學</h3>
+                <p>登山新手必看，輕鬆學會申請臺灣山屋住宿。</p>
+            </div>
+        </div>
+        <div class="card" id="gear">
+            <picture class="card__image">
+                <source media="(max-width: 727px)" srcset="image/img_card03p.jpg">
+                <source media="(min-width: 728px)" srcset="image/img_card03.jpg">
+                <img src="image/img_card03.jpg" alt="裝備選購懶人包">
+            </picture>
+            <div class="card__info">
+                <h3>裝備選購懶人包</h3>
+                <p>新手入門必備！登山裝備選購、清單懶人包一次看！</p>
+            </div>
+        </div>
+        <div class="card" id="tips">
+            <picture class="card__image">
+                <source media="(max-width: 727px)" srcset="image/img_card04p.jpg">
+                <source media="(min-width: 728px)" srcset="image/img_card04.jpg">
+                <img src="image/img_card04.jpg" alt="新手登山注意事項">
+            </picture>
+            <div class="card__info">
+                <h3>新手登山注意事項</h3>
+                <p>給新手的超實用登山指南！搞懂3大爬山注意事項。</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright 2024 Beauty of Taiwan. All Rights Reserved</p>
+    </footer>
+</div>
+
+<script>
+    let myNav = document.querySelector(".nav-menu"); //在 JS 裡定義下拉選單
+    let myButton = document.querySelector(".nav-button"); // 在 JS 裡定義漢堡按鈕
+
+    myButton.addEventListener("click", function() { //在 myButton 上安裝事件監聽器，監聽有無被點選的動作
+        myNav.classList.toggle("hide"); //如果有被點選，就在 myNav 的 class 清單中，開關 hide 這個 class
+    });
+</script>
+</body
